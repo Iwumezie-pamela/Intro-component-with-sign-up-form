@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+.error-text,
+.error-icon{
+    display: none;
+}  
+
+.field-group.error .error-text,
+.field-group.error .error-icon{
+    display: block;
+} 
+
+.field-group.error input{
+    border: 2px  solid hsl(0, 100%, 74%);;
+}
+
+#intro {
+    background-image: url(images/bg-intro-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height:100vh;
+     padding:100px 0 50px;
+     
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   text-align: center;
+   max-width: 1300px;
+   padding:0 30px;
+   margin: 0 auto;
+  
+}
+
+.left-col{
+    flex: 1;
+   margin-bottom:3rem ;
+}
+
+.left-col h1{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+  
+}
+
+.left-col p{
+    color: rgb(236, 234, 234);
+    font-size: 1rem;
+  font-weight:400 ;
+  line-height: 1.5rem;
+}
+
+.right-col {
+    flex: 1;
+}
+
+.right-col .top-box{
+   background-color:hsl(248, 32%, 49%);
+   box-shadow: 0 7px hsla(249, 10%, 26%, 0.2);
+   border-radius: 10px;
+   font-size: 1rem;
+   margin-bottom: 1.35rem;
+    padding: 15px 70px;
+cursor: pointer;
+}
+
+.right-col p{
+color: rgb(213, 211, 211);
+
+}
+
+.right-col span {
+    color: white;
+    font-weight: 600;
+}
+
+.right-col .form-container{
+    background-color: white;
+    box-shadow: 0 7px hsla(249, 10%, 26%, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+
+}
+
+.field-group{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.right-col input,
+.right-col button[type=submit]{
+    border:1.3px solid hsl(246, 25%, 77%);
+    border-radius: 8px;
+    color: hsl(249, 10%, 26%);
+    font-size: 14px;
+    font-weight: 600;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 5px;
+        outline: none;
+  padding-left: 20px;
+}
+
+.right-col button[type=submit]{
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0 4px hsl(154, 59%, 51%);
+    color:white ;
+    font-weight: 500;
+    font-size: 16px;
+     letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition:all ease-in-out 0.3s ;
+    margin-bottom: 1.5rem;
+}
+
+.right-col button[type=submit]:hover{
+    background-color: hsl(154, 79%, 64%);
+}
+
+.error-icon{
+position: absolute;
+right: 20px;
+top: 28%;
+width: 5.5%;
+}
+
+.form-container .error-text{
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    font-size: 0.8rem ;
+    font-style: italic;
+}
+
+.form-footer{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.form-footer a{
+    color: hsl(0, 100%, 74%);
+    font-weight:600 ;
+    text-decoration: none;
+}
+
+
+@media(min-width:1000px){
+#intro {
+    background-image: url(images/bg-intro-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 100%, 74%);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 7rem;
+}
+
+.left-col{
+    text-align: left;
+    padding-right: 1rem;
+}
+
+.left-col h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.left-col p{
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+} 
+
+
+
+
+
+
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+} 
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
